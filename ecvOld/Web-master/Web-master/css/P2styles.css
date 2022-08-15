@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff2') format('woff2'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	padding:auto;
+	margin: auto;
+
+	background: url('../images/fond_jaune.png');
+	display:flex; 
+	width:auto;	
+	color:#black;
+	font-family: Helvetica, Arial, sans-serif ;
+	font-size: 15px;
+	font-style: normal ;
+	font-weight: normal ;
+	text-transform: none;
+	background-color:none;
+	position: center;
+	
+}
+
+#bg {
+	display:flex-inline; 
+
+	margin: auto;
+	padding:auto;
+	background:transparent ;
+ 	background-repeat:no-repeat;	
+	background-position:absolute ;
+	width:auto;
+	 
+	
+}
+
+
+#container {
+	margin: auto;
+	width:auto; 
+	
+}
+
+#content {
+	width:auto;
+	margin: auto ;
+	text-align:left;
+	min-height:auto;
+	list-style:none;
+}
+
+@media all and (max-width: 1024px)
+
+{
+
+    #container,#content
+
+    {
+
+        width: auto;
+		font-size: 1.1em;
+
+    }
+
+}
+
+@media all and (max-device-width: 480px)
+{
+
+    #container,#content
+
+    {
+
+        width: auto;
+		font-size: 1.1em;
+
+    }
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	height:auto; 
+	list-style:none;
+}
+
+.element{
+	border: 100px solid #FF0000;
+	 background-color: white;
+
+}
+
+.element:nth-child(3){
+	
+	border: 100px solid #AEEE00;
+}
+
+.element:nth-child(2) /* On prend le deuxième bloc élément */
+
+{
+	margin-top:250px;
+    background-color: blue;
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+	background-color: white;
+	border: 100px solid #F4FF3A;
+}
+
+
+h1 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+ 
+}
+
+
+h2 {
+	font-family: 'cac_champagneregular',Helvetica, Arial, sans-serif ;
+	color:#424242;
+	font-size:30px ;
+	margin:auto;
+	clear:both;
+	text-align:center;	
+}
+
+h3 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+}
+h4 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+#header{
+	margin: auto;
+	min-height:0px;
+	height:auto;
+	width: auto;
+	
+}
+
+
+#header1{
+	display:block;
+	margin:0px 20px;
+	height:auto;
+		
+	width:auto;
+}
+
+html {
+	background: #e5ecf3;
+	margin:auto;
+	padding:0;	
+	overflow: auto;
+}
+
+
+h1 {
+
+	font-family: 'cac_champagneregular',  Arial, serif;
+	color:green;
+	font-size:40px ;
+	margin:auto;
+	clear:both;
+	display:flex-inline;
+}
+
+
+p {
+	font-family: 'cac_champagneregular',Times,Helvetica, Arial, sans-serif ;
+	margin:auto;
+	font-size:20px;
+	color: dark green;
+	letter-spacing: normal ;
+	line-height: 20px ;
+}
+
+
+
+
+:required
+
+{
+    background-color: lime;
+}
+
+

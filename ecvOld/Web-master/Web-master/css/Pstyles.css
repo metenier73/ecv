@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff2') format('woff2'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+   …
+}
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+/* Sur les téléviseurs */
+@media tv
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+a:link, a:visited {
+	color:#888888;
+	text-decoration:none;
+}
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: gray;
+}
+a:hover {
+	color:gray;
+	text-decoration:underline;
+}
+
+
+
+
+html {
+	background:#888888; /*#FFFF;*/
+	overflow: auto;
+	margin:auto;
+	padding:auto;
+	width:auto;
+	text-align:center;
+	padding-top:60px;
+
+
+}
+
+body {
+	display:flex-inline; 
+	width:auto;	
+	color:#888888;	
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	padding-bottom:auto;
+
+}
+#bg {
+	margin:auto;
+	padding:auto;
+	background:transparent ;
+ 	background-repeat:no-repeat;	
+	background-position: center top ;
+	width:auto;
+}
+
+#container {
+	margin: auto;
+	width:auto; 
+	
+}
+#conteneur
+
+{
+    display: flex-inline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	height:auto; 
+	list-style:none;
+}
+
+#content {
+	display: flex-inline;
+
+	width:auto;
+	margin: auto ;
+	text-align:left;
+	min-height:auto;
+	list-style:none;
+}
+@media all and (max-width: 1024px)
+
+{
+
+    #container,#content
+
+    {
+
+        width: auto;
+		font-size: 1.1em;
+
+    }
+
+}
+
+@media all and (max-device-width: 480px)
+{
+
+    #container,#content
+
+    {
+
+        width: auto;
+		font-size: 1.1em;
+
+    }
+}
+
+
+
+.element{
+	font-family:  Helvetica, Arial, sans-serif ;	
+	font-style: normal ;
+	font-variant:normal;
+	list-style-position:outside;
+	font-size: 15px;	
+	align-items:left;
+	font-weight:none;
+	font-style:normal;	
+	color:#424242; 
+	font: normal;
+}
+
+.element:hover >.infoBulle{
+	transform :scale(0.5) rotateX(180deg);
+	margin-left:250px;	
+}
+.element{
+	border: 50px solid #424242;
+	 background-color: #888888;
+
+}
+
+.element:nth-child(3){
+
+	border: 50px solid #424242;
+}
+
+.element:nth-child(2) /* On prend le deuxième bloc élément */
+
+{
+	margin-top:-60px;
+    background-color: blue;
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+ background-color: #888888;
+ border: 50px solid #424242;
+}
+
+h1 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+ 
+}
+
+
+h2 {
+	font-family: 'cac_champagneregular',Helvetica, Arial, sans-serif ;
+	color:#424242;
+	font-size:30px ;
+	margin:auto;
+	clear:both;
+	text-align:center;	
+}
+
+h3 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+}
+
+
+
+#p1 {
+	font-family: Helvetica, Arial, sans-serif ;
+	margin:auto;
+	font-size:15px;
+	color:#424242;
+	letter-spacing: normal ;
+	padding:auto;
+	text-align:left;
+
+}
+
+img{
+	border:none;
+	float:center;
+	text-align:center;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.infoBulle{
+transform : scale(0) rotateX(-180deg);
+position : absolute;
+background-color : #424242;
+color : white;
+border-radius : 5px;
+padding : 8px ;
+margin-top : 10px;
+box-shadow : 1px 1px 0 0.5px rgba(0,0,0,0.3);
+border-bottom : 3px solid rgba(255,255,255,0.3);
+ border-left:2px solid transparent;
+ border-right: 2px solid transparent;
+ transition: 1s;
+
+}
+
+.infoBulle::before{
+	content:'';
+	position:absolute;
+	border-bottom:8px solid #2e3048;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin-top:-20px;
+	margin-left:250px;	
+	
+}
+
+
+
+
+
+li{
+    
+    list-style-type:square;
+}
+
+nav {
+	display: flex-inline-table;
+	flex-direction: column;
+	padding:15px;
+	height:auto;
+	width:auto;	
+	text-align:center;
+	font-size: 15px;
+	font-family: Helvetica, 'Play', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+.container {
+  margin: 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border: 0.1rem solid transparent; 
+  }
+
+
+.form {
+  width: auto;
+  padding-bottom: 1.5rem;
+}
+
+.form__field label {
+  color: #424242;
+  display: flex;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form__field input {
+  width: auto;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #424242;
+}

@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff2') format('woff2'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+   …
+}
+a:link, a:visited {
+	color:#888888;
+	text-decoration:none;
+}
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: gray;
+}
+a:hover {
+	color:gray;
+	text-decoration:underline;
+}
+
+
+
+
+html {
+	background:#888888; /*#FFFF;*/
+	overflow: auto;
+	margin:50px ;
+	padding:auto;
+	width:auto;
+
+}
+
+body {
+	padding:auto;
+	display:flex; 
+	width:auto;	
+	color:#888888;	
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+}
+
+#bg2 {
+
+	background:transparent ;
+ 	display:flex-inline;	
+	background-position: auto;
+	font-family: Helvetica, Arial,'Play', sans-serif;
+    text-align:Left;
+    color:#888888;
+    width:auto;
+	font-size:12px  ;
+	padding-left:auto;
+margin:auto;
+
+}
+
+.element{
+	font-family:  Arial, sans-serif ;	
+	font-style: normal ;
+	font-variant:normal;
+	list-style-position:outside;
+	font-size: 15px;	
+	align-items:left;
+	font-weight:none;
+	font-style:normal;	
+	color:#888888; 
+	font: normal;
+}
+
+.element:hover >.infoBulle{
+	transform :scale(1) rotateX(180deg);
+	margin-left:auto;	
+}
+
+h1 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+ 
+}
+
+
+h2 {
+	font-family: 'cac_champagneregular',Helvetica, Arial, sans-serif ;
+	color:#424242;
+	font-size:30px ;
+	margin:auto;
+	clear:both;
+	text-align:center;	
+}
+
+h3 {
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+}
+
+
+
+#p1 {
+	font-family: Helvetica, Arial, sans-serif ;
+	margin:20px ;
+	font-size:15px;
+	color:#424242;
+	letter-spacing: normal ;
+	padding:20px;
+	text-align:center;
+
+}
+
+
+
+.imageFlottante{
+	float: center;
+	margin:50px;
+}
+.infoBulle{
+transform : scale(0) rotateX(-360deg);
+position : absolute;
+background-color : #888888;
+border-radius : 5px;
+padding : 8px ;
+margin-top : 10px;
+box-shadow : 1px 1px 0 0.5px rgba(0,0,0,0.3);
+border-bottom : 3px solid rgba(255,255,255,0.3);
+border-left:10px solid transparent;
+border-right: 10px solid transparent;
+transition: 1s;
+
+}
+
+.infoBulle::before{
+	content:'';
+	position:absolute;
+	border-bottom:8px solid #2e3048;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin-top:-16px;
+	margin-left:10px;	
+	
+}
+
+
+
+
+nav {
+	display: flex-inline-table;
+	flex-direction: column;
+	padding:15px;
+	height:auto;
+	width:auto;	
+	text-align:center;
+	font-size: 15px;
+	font-family: Helvetica, 'Play', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+.container {
+  margin: 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border: 0.1rem solid transparent; 
+  }
+
+
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.form__field label {
+  color: #424242;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form__field input {
+  width: 100%;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #424242;
+}
